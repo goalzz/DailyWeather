@@ -40,29 +40,32 @@ body {
     margin-bottom: 20px;
   }
   
-  .form-input {
-    width: 70%;
-    padding: 8px;
-    box-sizing: border-box;
-  }
-  
+  .form-input,
   .search-button {
-    padding: 9px;
-    background-color: #1d78bd;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    margin-top: 5px;
-    width: 70%;
+  width: 70%; 
+  padding: 8px;
+  box-sizing: border-box;
+  }
+
+  .search-button {
+  padding: 9px;
+  background-color: #1d78bd;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  width: 70%;
   }
   
   .hr {
     border: 1px solid #ccc;
     margin: 10px 0;
+    width: 70%; /*made width same as form and search button*/
   }
   
   .list-group {
     margin-top: 20px;
+
   }
   
   .list-group-item {
@@ -84,17 +87,30 @@ body {
     margin-bottom: 20px;
   }
   
-  #forecast {
+  .forecast-container {
     display: flex;
-    background-color: #9f9a9a;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   
   .forecast-day {
     width: calc(20% - 10px);
     box-sizing: border-box;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #7b6f6f;
     margin-bottom: 10px;
   }
+
+  /* Media query for smaller screens */
+@media (max-width: 768px) {
+  .forecast-day {
+    width: calc(50% - 10px); 
+  }
+}
+
+@media (max-width: 480px) {
+  .forecast-day {
+    width: 100%; 
+  }
+}
   
