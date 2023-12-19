@@ -26,6 +26,7 @@
 
 ### Screenshot
 
+<img width="400" alt="Weather Dashboard screenshot" src="https://github.com/goalzz/DailyWeather/assets/124784722/de7b13ea-0274-4d8d-b01a-12f25a022cd9">
 
 
 ### Deployment 
